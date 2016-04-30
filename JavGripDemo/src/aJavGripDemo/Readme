@@ -1,0 +1,15 @@
+JavGrip proposes a few "basic" tools written to ease taking a first grip on JavaFX :
+  Popup window enabling information, alerts, and alternative settlement (yes/no...)
+  Basic Logger 
+  Basic access to Configuration properties
+  Scene Framer,  a bit fancier Stage Decoration medium than the standard FXML windows... to plug between the PrimaryStage and its
+  usual fxml Scene...
+The main purpose, of course, is not to replace more mature/richly featured/tested in depth/portable anywhere tools, but to
+provide examples of JavaFX/FXML/CSS interactions, flexibility and power... kind of playground for experimentations. Nothing
+for the experimented JavaFX expert here, for sure!
+
+JavGrip Demo integrates those tools in a working app that does pretty nothing, apart showing a chocolate-framed window with
+an exit ("Bye...") and an Iconify ("Zzz...") buttons, and the notification Popup (click the Bye button...). Config is there, but
+needs a config file (Demo uses default properties); similarly, a log is produced, but quite hollow...
+
+Tools may be constructed as a Library package, and Demo as a Main JAVAFX with FXML application...
