@@ -1,0 +1,56 @@
+/*
+*  Created by MIMO on April 28th, 2016
+*
+*  CONTEXT :   Easing access to JAVAFX development
+*  PURPOSE :  Provide a Demo and initial template for building a JAVAFX Application with a few basic tools (scene frame decoration, log, popup, config)
+*  ROLE :	CSS Stylesheet, providing jus a few examples (potential utilisation is extremely large)
+*/
+
+#theatreGround {
+	-fx-border-width: 1pt;
+	-fx-border-color: chocolate;
+	}
+
+#theatreRoof {
+	-fx-background-color: yellowgreen;
+	-fx-font: BOLD 16pt Calibri;
+	}
+
+#theatreFloor {
+	-fx-background-color: tan;
+	-fx-font: NORMAL 12pt Calibri;
+	}
+
+.input-field {
+	-fx-background-color: linen;
+	}
+
+.input-field:focused {
+	-fx-background-color: lightsteelblue;
+	}
+
+.blueGradientBackground {
+	-fx-background-color: linear-gradient(to bottom, grey, lightsteelblue);
+	}
+
+.strangeGradientBackground {
+	-fx-background-color: linear-gradient(to bottom, powderblue, thistle);
+	}
+
+.tabLabel:selected {
+	-fx-font: BOLD 12pt Calibri;
+	-fx-background-color: goldenrod;
+	}
+
+.searchButton {
+	-fx-background-color: lightsteelblue;
+	-fx-border-width: 2pt;
+	-fx-border-radius: 5;
+	-fx-border-color:  darkslateblue;
+	-fx-font: BOLD 12pt Calibri;
+	-fx-effect: innershadow(gaussian, cadetblue, 10, 0.1, 2, 2);
+	}
+
+.ThisBlueRect {
+	-fx-fill: royalblue;
+	}

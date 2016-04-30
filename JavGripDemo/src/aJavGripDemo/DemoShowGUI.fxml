@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/*
+*  Created by MIMO on April 28th, 2016
+*
+*  CONTEXT :   Easing access to JAVAFX development
+*  PURPOSE :  Provide a Demo and initial template for building a JAVAFX Application with a few basic tools (scene frame decoration, log, popup, config)
+*  ROLE :	FXML file providing an easy to edit/enrich, and compilation-independant, actionable GUI description
+*/
+-->
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?scenebuilder-stylesheet DemoShowSTYLE.css?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="theatreGround" prefHeight="750.0" prefWidth="912.0"
+		fx:controller="aJavGripDemo.DemoShowCTRL">
+   <children>
+
+	<fx:define>
+	   <Font name="Calibri" size="10.0" fx:id="fCa10N" />
+	   <Font name="Calibri" size="12.0" fx:id="fCa12N" />
+	   <Font name="Calibri" size="14.0" fx:id="fCa14N" />
+	   <Font name="Calibri" size="16.0" fx:id="fCa16N" />
+	   <Font name="Calibri Bold" size="10.0" fx:id="fCa10B" />
+	   <Font name="Calibri Bold" size="12.0" fx:id="fCa12B" />
+	   <Font name="Calibri Bold" size="14.0" fx:id="fCa14B" />
+	   <Font name="Calibri Italic" size="14.0" fx:id="fCa14I" />
+	   <Font name="Calibri Bold" size="16.0" fx:id="fCa16B" />
+	</fx:define>
+
+	<BorderPane fx:id="theatreView" prefHeight="750.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+	   <top>
+		<Pane id="theatreRoof" fx:id="lesCintres" prefHeight="65.0" prefWidth="890.0" >
+		   <children>
+
+			<Label font="$fCa14B" fx:id="headLine1" layoutX="10.0" layoutY="3.0" prefHeight="20.0" prefWidth="770.0" />
+			<Label font="$fCa12B" fx:id="headLine2" layoutX="10.0" layoutY="25.0" prefHeight="20.0" prefWidth="770.0" />
+
+		   </children>
+		</Pane>
+	   </top>
+
+	   <center>
+		<TabPane fx:id="laScene" onMouseClicked="#onTabSelection" layoutX="4.0" layoutY="43.0" prefHeight="650.0" prefWidth="894.0" tabClosingPolicy="UNAVAILABLE" >
+		   <tabs>
+
+				<!-- TAB 1 : FIRST TAB ROLE -->
+			<Tab fx:id="firstTAB" text="First Tab NAME" styleClass="tabLabel" disable="false" >
+			   <content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="890.0" styleClass="blueGradientBackground" >
+				   <children>
+
+					<Label layoutX="10.0" layoutY="50.0" prefHeight="21.0" prefWidth="872.0" text="A Text... and a blue rectangle..." />
+					<Rectangle fx:id="aRect" layoutX="10.0" layoutY="70.0" height="50.0" width="50.0" styleClass="ThisBlueRect" />
+
+				   </children>
+				</AnchorPane>
+			   </content>
+			</Tab>
+
+				<!-- TAB 2 : SECOND TAB ROLE -->
+			<Tab fx:id="secondTAB" text="Second Tab NAME" styleClass="tabLabel" disable="false" >
+			   <content>
+				<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="500.0" styleClass="strangeGradientBackground">
+				   <children>
+
+				   </children>
+				</AnchorPane>
+			   </content>
+			</Tab>
+		   </tabs>
+		</TabPane>
+	   </center>
+
+	   <bottom>
+	     <Pane id="theatreFloor" fx:id="laFosse" prefHeight="30.0" prefWidth="890.0" >
+		   <children>
+			<Label id="footLine" fx:id="footLine" layoutX="5.0" layoutY="5.0" prefHeight="21.0" prefWidth="880.0" text="Hello !" />
+		   </children>
+		</Pane>
+	   </bottom>
+
+	</BorderPane>
+   </children>
+</AnchorPane>
+
+
