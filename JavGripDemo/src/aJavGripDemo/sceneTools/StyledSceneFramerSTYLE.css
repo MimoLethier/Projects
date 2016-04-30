@@ -1,0 +1,46 @@
+/*
+*  Created by MIMO on April 28th, 2016
+*
+*  CONTEXT :   Easing access to JAVAFX development
+*  PURPOSE :   Enable using a little more appealing Application window framing than the basic Stage
+*  ROLE    :	Provide a usable model for styling the SceneFramer objects
+*
+*	Technical Notes : May be used directly (via scene.getStylesheets().add"url"), or just copied/imported in the main CSS file.
+*	   Just take care of preserving naming coherency
+*/
+
+/* ===== Styling the Scene Frame ===== */
+.styled-FrameBackground-Color {
+   -fx-fill: sienna;
+}
+
+.styled-ExitBTN {
+   -fx-background-color: chocolate;
+   -fx-font-family: "Calibri";
+   -fx-font-size: 10pt;
+   -fx-font-weight: bold;
+   -fx-text-fill: maroon;
+   -fx-border-width: 0pt;
+}
+
+.styled-IconifyBTN {
+   -fx-background-color: chocolate;
+   -fx-font-family: "Calibri";
+   -fx-font-size: 10pt;
+   -fx-font-weight: bold;
+   -fx-text-fill: mediumblue;
+   -fx-border-width: 0pt;
+}
+
+.styled-frameTitleTXT {
+   -fx-alignment: CENTER;
+   -fx-background-color: transparent;
+   -fx-font-family: "Calibri";
+   -fx-font-size: 12pt;
+   -fx-font-weight: bold;
+   -fx-font-style : italic;
+   -fx-text-fill: orange;
+   -fx-focus-traversable: false;
+}
+/* ======= End of Styling ======== */
+

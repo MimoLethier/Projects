@@ -1,0 +1,149 @@
+/*
+*	MIMO, 2015/10/23
+*
+*	CONTEXT : Trying to skin a specific Text display widget, implementing scrolling, read-only, thumb design, aso...
+*	OBJECT : Just a CSS to be imported by the root component
+*/
+
+#popup-widget {
+   -fx-background-color: lavender;
+   -fx-border-width: 3pt;
+   -fx-border-color: steelblue;
+}
+
+
+/****************************************************************
+  Content pane background
+****************************************************************/
+.text-area .content {
+   -fx-background-color: gainsboro;
+}
+
+/****************************************************************
+  ScrollBar Skin - Courtesy JavaFX blog @ wordpress.com
+****************************************************************/
+.scroll-bar{
+ -fx-background-color: steelblue;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+ -fx-background-color: transparent;
+ -fx-border-color:transparent;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+ -fx-background-color: transparent;
+ -fx-background-insets: 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb {
+ -fx-background-color: powderblue;
+ -fx-background-insets: 4 0 4 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .thumb {
+ -fx-background-color: powderblue;
+ -fx-background-insets: 0 4 0 4;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+ -fx-background-color: rgb(231,231,231);
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+ -fx-background-color: rgb(255,255,255);
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-arrow {
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-background-color: rgb(211,211,211);
+ -fx-padding: 0.25em;
+ -fx-rotate: -90;
+}
+.scroll-bar:vertical .increment-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 0;
+}
+.scroll-bar:horizontal .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 90;
+}
+.scroll-bar:vertical .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: -180;
+}
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+ -fx-background-color: transparent,rgb(96,96,96),rgb(96,96,96);
+}
+
+/* ============================================================ */
+
+.blueLabel {
+	-fx-background-color: lightsteelblue;
+	}
+
+.input-field {
+	-fx-background-color: linen;
+	}
+
+.input-field:focused {
+	-fx-background-color: lightsteelblue;
+	}
+
+.doneButton {
+	-fx-background-color: lightsteelblue;
+	-fx-border-width: 1pt;
+	-fx-border-radius: 3;
+	-fx-border-color:  darkslateblue;
+	-fx-font: BOLD 12pt Calibri;
+	-fx-effect: innershadow(gaussian, cadetblue, 10, 0.1, 2, 2);
+	}
+
+#yesButton {
+	-fx-background-color: lawngreen;
+	-fx-pref-height: 15.0;
+	-fx-border-width: 1pt;
+	-fx-border-radius: 3;
+	-fx-text-alignment: center;
+	-fx-border-color: darkolivegreen;
+	-fx-font: BOLD 10pt Calibri;
+	}
+
+#noButton {
+	-fx-background-color: darkorange;
+	-fx-pref-height: 15.0;
+	-fx-border-width: 1pt;
+	-fx-border-radius: 3;
+	-fx-text-alignment: center;
+	-fx-border-color:  firebrick;
+	-fx-font: BOLD 10pt Calibri;
+	}
+
+.otherButton {
+	-fx-background-color: gold;
+	-fx-border-width: 1pt;
+	-fx-border-radius: 5;
+	-fx-border-color:  darkslateblue;
+	-fx-font: BOLD 10pt Calibri;
+	-fx-effect: innershadow(gaussian, sienna, 10, 0.1, 2, 2);
+	}
+
